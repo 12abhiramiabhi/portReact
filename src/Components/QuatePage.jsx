@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import "./port.css"
 
 export default function QuatePage() {
     const [quote, setquote] = useState("")
@@ -22,11 +23,12 @@ export default function QuatePage() {
 
     }
 
-
     return (
-        <div>
-            <button onClick={getQuote}>quote for you</button>
-            <h1>{quote}</h1>
+        <div className='main-container'>
+        <div className='container'>
+            <h1 className='para' >{quote}</h1>
+            <button className='btn' onClick={getQuote}>quote for you</button>
         </div>
+      </div>  
     )
 }
