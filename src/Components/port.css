@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Dancing+Script&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caramel&family=Dancing+Script&display=swap');
 
 body {
-    color: black;
-    background-color: #433039;
+    background: url("https://e0.pxfuel.com/wallpapers/5/455/desktop-wallpaper-yellow-simple-poster-background-jpg-simple-poster-background-for-quotes-simple-poster-design-yellow-banner-thumbnail.jpg")no-repeat;
+    
+    /* color: black; */
+     background-size: cover;
     /* color: rgba(0,0,0,0.4); */
 }
 
 * {
     font-family: 'Caramel', cursive;
+
 }
 
 .btn {
     width: 200px;
     height: 50px;
     align-items: center;
-    background-color: #433039;
+    background-color: #f1f1f1;
     font-size: 28px;
     border-radius: 3rem;
     margin-left: 140px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .main-container {
@@ -31,7 +34,8 @@ body {
 .container {
     height: 350px;
     width: 500px;
-    background: linear-gradient(to bottom, #1b111b 0%, #433039 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #fffeff 100%);
+    /* background: linear-gradient(to bottom, #1b111b 0%, #433039 100%); */
     border-radius: 20px;
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,rgba(0,0,0,0.12) 0px -12px 30px, rgba(red, green, blue, alpha); */
     padding: 40px;
@@ -42,5 +46,5 @@ body {
 .para {
     font-family: 'Dancing script', cursive;
     padding: 20px;
-    color: aliceblue;
+    color: rgb(12, 12, 12);
 }

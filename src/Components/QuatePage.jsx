@@ -10,7 +10,7 @@ export default function QuatePage() {
 
     useEffect(() => {
         getQuote()
-    }, [])//empty string kodukkunnth one time anikkan///
+    }, [])//empty string kodukkunnth one time kanikkan///
 
     async function getQuote() {
         let response = await axios.get("https://api.quotable.io/random")
