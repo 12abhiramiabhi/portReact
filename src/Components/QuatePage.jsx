@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./port.css"
 
 export default function QuatePage() {
-    const [quote, setquote] = useState("")
+    const [quote, setquote] = useState("")//inital valu quote//
     let allQutes = ["quote1", "quote2", "quote3"]
     const [count, setCount] = useState(0)
+
+
+    useEffect(() => {
+        getQuote()
+    }, [])//empty string kodukkunnth one time anikkan///
 
     async function getQuote() {
         let response = await axios.get("https://api.quotable.io/random")
@@ -23,12 +28,13 @@ export default function QuatePage() {
 
     }
 
+
     return (
         <div className='main-container'>
-        <div className='container'>
-            <h1 className='para' >{quote}</h1>
-            <button className='btn' onClick={getQuote}>quote for you</button>
+            <div className='container'>
+                <h1 className='para' >{quote}</h1>
+                <button className='btn' onClick={getQuote}>quote for you</button>
+            </div>
         </div>
-      </div>  
     )
 }
